@@ -11,9 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (savedTheme === 'light') {
       body.classList.remove('dark-mode');
       body.classList.add('light-mode');
+      updateThemeIcon();
     } else {
       body.classList.remove('light-mode');
       body.classList.add('dark-mode');
+      updateThemeIcon();
     }
   } else {
     // If no saved preference, use OS preference
@@ -24,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       body.classList.add('light-mode');
       body.classList.remove('dark-mode');
     }
+    updateThemeIcon();
   }
   
   // Theme toggle button
@@ -44,9 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         document.documentElement.style.transition = '';
       }, 500);
+      updateThemeIcon();
     });
   }
-  
+  function updateThemeIcon() {
+  const icon = document.getElementById('theme-icon-inner');
+  const isDark = document.body.classList.contains('dark-mode');
+  icon.className = isDark ? 'bx bx-sun' : 'bx bx-moon'; // matahari = dark mode aktif
+}
+
   // Listen for OS theme changes
   prefersDarkScheme.addEventListener('change', (e) => {
     // Only auto-switch if user hasn't set a preference

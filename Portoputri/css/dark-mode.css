@@ -7,9 +7,29 @@
   --color-surface: var(--color-surface-dark);
   --color-surface-variant: var(--color-surface-variant-dark);
 }
+.theme-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-icon i {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: white;
+}
+
+.theme-icon:hover i {
+  transform: scale(1.2);
+}
 
 .dark-mode .theme-icon::before {
-  content: '';
+
   position: absolute;
   top: 2px;
   left: 2px;
@@ -22,7 +42,7 @@
 }
 
 .dark-mode .theme-icon::after {
-  content: '';
+
   position: absolute;
   top: 0px;
   left: 0px;
