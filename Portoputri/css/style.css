@@ -338,6 +338,7 @@ section {
   position: absolute;
   top: 0;
   right: -25%;
+  z-index: var(--z-below);
   
 }
 
@@ -363,7 +364,7 @@ section {
   left: 0;
   overflow: hidden;
   pointer-events: none;
-  z-index: var(--z-below);
+  z-index: -2;
 }
 
 .shape {
@@ -387,7 +388,7 @@ section {
   height: 150px;
   background: var(--color-accent-secondary);
   bottom: 15%;
-  right: 15%;
+  right: 30%;
   animation: float 12s infinite alternate-reverse ease-in-out;
 }
 
