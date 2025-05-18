@@ -91,7 +91,6 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   transition: background-color var(--transition-medium), color var(--transition-medium);
-  
 }
 
 .container {
@@ -196,6 +195,7 @@ section {
   z-index: var(--z-above);
   opacity: 0.3;
   mix-blend-mode: overlay;
+  overflow-x: hidden;
 }
 
 /* Header & Navigation */
@@ -338,7 +338,7 @@ section {
   flex: 1;
   position: absolute;
   top: 0;
-  right: -40%;
+  right: -25%;
   z-index: var(--z-below);
   
 }
