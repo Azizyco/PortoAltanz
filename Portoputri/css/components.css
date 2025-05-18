@@ -487,7 +487,9 @@ input:focus, textarea:focus {
   padding: var(--space-8) var(--space-16);
   border-radius: var(--radius-full);
 }
-
+.toggletheme{
+  padding: 1rem;
+}
 /* Theme Toggle */
 #theme-toggle {
   background: none;
