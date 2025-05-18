@@ -129,6 +129,7 @@ input:focus, textarea:focus {
   display: flex;
   gap: var(--space-48);
   align-items: center;
+  overflow-x: hidden;
 }
 
 .about-image {
