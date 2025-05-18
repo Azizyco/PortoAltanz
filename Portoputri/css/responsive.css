@@ -45,6 +45,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: 720px;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -277,6 +278,7 @@
 @media (max-height: 500px) and (orientation: landscape) {
   .hero {
     min-height: 450px;
+    overflow-x: hidden;
   }
 
   .hero-content {
@@ -313,10 +315,12 @@
 @media (orientation: portrait) {
   .hero .container {
     flex-direction: column;
+    overflow-x: hidden;
   }
 
   .hero-image {
-    margin-top: var(--space-32);
+    margin-top: var(--space-64);
+    
   }
 }
 
